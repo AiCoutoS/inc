@@ -21,4 +21,4 @@ function view($name,$data=null,$print=true){
         return $output;
     }
 }
- ?>
+?>
