@@ -4,6 +4,7 @@
 
 function segment($segmentId=null){
     $str=$_SERVER["REQUEST_URI"];
+    $str=@explode('?',$str)[0];
     $arr=explode('/',$str);
     $arr=array_filter($arr);
     $arr=array_values($arr);
