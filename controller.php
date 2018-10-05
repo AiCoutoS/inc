@@ -8,7 +8,7 @@ function controller($name,$data=null){
         if(is_array($data)){
             extract($data);
         }
-        require $str;
+        require_once($str);
     }else{
         die('<b>erro</b><br>Controller '.$name.' não encontrado');
     }
