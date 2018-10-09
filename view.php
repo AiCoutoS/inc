@@ -3,7 +3,7 @@
 //24 de agosto de 2018
 
 function view($name,$data=null,$print=true){
-    $filename=ROOT.'view/'.$name.'.php';
+    $filename='../view/'.$name.'.php';
     if(file_exists($filename)){
         if(is_array($data)){
             extract($data);
