@@ -12,8 +12,24 @@ atualizar() {
 instalar() {
     clear
     echo "instalando..."
-    cp $PWD/inc/.gitignore.example $PWD/.gitignore
-    composer require basic/migration
+    GITIGNORE=$PWD/.gitignore
+    if [ -e $GITIGNORE ]
+    then
+        echo ".gitignore ok..."
+    else
+        echo ".gitignore adicionado..."
+        cp $PWD/inc/.gitignore.example $GITIGNORE
+    fi
+    ENV=$PWD/.env
+    if [ -e $ENV ]
+    then
+        echo ".env ok..." 
+    else
+        echo ".env adicionado..."
+        cp $PWD/inc/.env.example $ENV
+    fi
+    composer require basic/migration 2.1.*
+    composer require vlucas/phpdotenv 2.5.*
     echo "pronto"
 }
 
