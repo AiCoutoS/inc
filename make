@@ -12,11 +12,6 @@ atualizar() {
 instalar() {
     clear
     echo "instalando..."
-<<<<<<< HEAD
-    cp $PWD/inc/.gitignore.example $PWD/.gitignore
-    composer require basic/migration ^2.1
-	composer require simplepie/simplepie 1.5.2
-=======
     GITIGNORE=$PWD/.gitignore
     if [ -e $GITIGNORE ]
     then
@@ -28,14 +23,14 @@ instalar() {
     ENV=$PWD/.env
     if [ -e $ENV ]
     then
-        echo ".env ok..." 
+        echo ".env ok..."
     else
         echo ".env adicionado..."
         cp $PWD/inc/.env.example $ENV
     fi
-    composer require basic/migration 2.1.*
-    composer require vlucas/phpdotenv 2.5.*
->>>>>>> bd82b9a799d7ebca589fb0a765e337d698a483ef
+	composer require basic/migration ^2.1
+	composer require fastfeed/fastfeed 0.4.0
+	composer require vlucas/phpdotenv 2.5.1
     echo "pronto"
 }
 
