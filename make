@@ -13,7 +13,8 @@ instalar() {
     clear
     echo "instalando..."
     cp $PWD/inc/.gitignore.example $PWD/.gitignore
-    composer require basic/migration
+    composer require basic/migration ^2.1
+	composer require simplepie/simplepie 1.5.2
     echo "pronto"
 }
 
@@ -36,5 +37,3 @@ in
     3) atualizar ;;
     *) echo "opção inválida" ;;
 esac
-
-
