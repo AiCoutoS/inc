@@ -10,6 +10,6 @@ function controller($name,$data=null){
         }
         require_once($str);
     }else{
-        die('<b>erro</b>'.PHP_EOL.'<br>Controller '.$name.' não encontrado'.PHP_EOL);
+        die('<b>Erro:</b><br>'.PHP_EOL.'<br>Controller <b>'.$name.'</b> não encontrado'.PHP_EOL);
     }
 }

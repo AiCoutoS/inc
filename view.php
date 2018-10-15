@@ -13,7 +13,7 @@ function view($name,$data=null,$print=true){
         $output=ob_get_contents();
         ob_end_clean();
     }else{
-        $output='<b>erro</b><br>View '.$filename.' não encontrada';
+        $output='<b>Erro:</b><br>'.PHP_EOL.'<br>View <b>'.$name.'</b> não encontrada';
     }
     if($print){
         print $output;
