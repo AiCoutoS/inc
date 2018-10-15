@@ -10,6 +10,6 @@ function getCookie($name){
     }
 }
 
-function setCookie($name,$value,$expiration){
+function newCookie($name,$value,$expiration){
     setcookie($name, $value, $expiration,'/');
 }
