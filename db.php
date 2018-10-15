@@ -22,11 +22,7 @@ function create_db_if_not_exists(){
         die('Could not connect: ' . mysql_error());
     }
     $db_selected = mysqli_select_db($link,$_ENV['DB_NAME']);
-    if ($db_selected){
-        if(isCli()){
-            print 'conectado ao banco de dados '.$_ENV['DB_NAME'].PHP_EOL;
-        }
-    }else{
+    if (!$db_selected){
         $sql = 'CREATE DATABASE '.$_ENV['DB_NAME'];
         $result=mysqli_query($link,$sql);
         if(isCli()){
