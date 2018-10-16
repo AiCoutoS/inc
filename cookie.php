@@ -2,9 +2,9 @@
 //Anderson Ismael
 //15 de outubro de 2018
 
-function getCookie($name){
-    if(isset($_COOKIE['name'])){
-        return $_COOKIE['name'];
+function getCookie($cookieName){
+    if(isset($_COOKIE[$cookieName])){
+        return $_COOKIE[$cookieName];
     }else{
         return false;
     }
