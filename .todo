@@ -1,6 +1,15 @@
 <?xml version="1.0"?>
 <todo version="0.1.20">
     <note priority="medium" time="1540707284">
-        simpledom
+        simpleDOM.php
+    </note>
+    <note priority="medium" time="1540708684">
+        2IPFS.php
+    </note>
+    <note priority="medium" time="1540708787">
+        concatenar todas funções em um unico arquivo
+    </note>
+    <note priority="medium" time="1540709617">
+        bootstrap.php (com boilerplate)
     </note>
 </todo>
