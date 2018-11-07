@@ -7,7 +7,7 @@
         2IPFS.php
     </note>
     <note priority="medium" time="1540708787">
-        concatenar todas funções em um unico arquivo
+        concatenar todas funções em um unico arquivo boundle.php
     </note>
     <note priority="medium" time="1540709617">
         bootstrap.php (com boilerplate)
