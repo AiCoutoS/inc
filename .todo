@@ -12,4 +12,7 @@
     <note priority="medium" time="1540709617">
         bootstrap.php (com boilerplate)
     </note>
+    <note priority="medium" time="1541700555">
+        inc/auth.php (interface para o basic/auth)
+    </note>
 </todo>
