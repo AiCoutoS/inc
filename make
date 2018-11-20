@@ -12,6 +12,14 @@ atualizar() {
 instalar() {
     clear
     echo "instalando..."
+    ENV=$PWD/.env
+    if [ -e $ENV ]
+    then
+        echo ".env ok..."
+    else
+        echo ".env adicionado..."
+        cp $PWD/inc/.env.example $ENV
+    fi
     GITIGNORE=$PWD/.gitignore
     if [ -e $GITIGNORE ]
     then
@@ -20,13 +28,13 @@ instalar() {
         echo ".gitignore adicionado..."
         cp $PWD/inc/.gitignore.example $GITIGNORE
     fi
-    ENV=$PWD/.env
-    if [ -e $ENV ]
+    MAKE=$PWD/make
+    if [ -e $MAKE ]
     then
-        echo ".env ok..."
+        echo "make ok..."
     else
-        echo ".env adicionado..."
-        cp $PWD/inc/.env.example $ENV
+        echo "make adicionado..."
+        cp $PWD/inc/make.example $MAKE
     fi
 	composer require basic/migration ^2.1
 	composer require fastfeed/fastfeed 0.4.0
