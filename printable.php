@@ -8,5 +8,5 @@ function printable($string) {
   // this is some bad utf-8 byte sequence that makes mysql complain - control and formatting i think
   $s = preg_replace('/(?>[\x00-\x1F]|\xC2[\x80-\x9F]|\xE2[\x80-\x8F]{2}|\xE2\x80[\xA4-\xA8]|\xE2\x81[\x9F-\xAF])/', ' ', $s);
   $s = preg_replace('/\s+/', ' ', $s); // reduce all multiple whitespace to a single space
-  return $s;
+  return trim($s);
 }
