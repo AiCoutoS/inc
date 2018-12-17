@@ -15,4 +15,7 @@
     <note priority="medium" time="1541700555">
         inc/auth.php (interface para o basic/auth)
     </note>
+    <note priority="medium" time="1545050240">
+        adicionar os arquivos da pasta vendor para instalar mais rapido
+    </note>
 </todo>
