@@ -36,9 +36,9 @@ instalar() {
         echo "make adicionado..."
         cp $PWD/inc/make.example $MAKE
     fi
-	composer require basic/migration ^2.1
-	composer require fastfeed/fastfeed 0.4.0
-	composer require vlucas/phpdotenv 2.5.1
+    #composer require basic/migration ^2.1
+    #composer require fastfeed/fastfeed 0.4.0
+    #composer require vlucas/phpdotenv 2.5.1
     echo "pronto"
 }
 
