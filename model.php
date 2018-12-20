@@ -2,7 +2,17 @@
 //Criado por Anderson Ismael
 //20 de Dezembro de 2018
 
-function model($name,$data=null){
+function model($names){
+    if(is_array($names)){
+        foreach($names as $name){
+            openModel($name);
+        }
+    }else{
+        openModel($names);
+    }
+}
+
+function openModel($name){
     $str=ROOT.'model/'.$name.'.php';
     if(file_exists($str)){
         if(is_array($data)){
